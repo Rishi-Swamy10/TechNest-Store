@@ -1,0 +1,144 @@
+/* LoginSignup.css */
+
+.bg-gradient-animated {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bg-gradient-animated::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      45deg,
+      #0f0f0f,
+      #1f1c2c,
+      #3a3a3a,
+      #191919,
+      #0c0c0c,
+      #2c3e50
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes floatParticles {
+    0% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(100vw, 100vh);
+      opacity: 0;
+    }
+  }
+  
+  /* Particle Base Style */
+  .particle {
+    position: absolute;
+    border-radius: 50%;
+    animation: floatParticles 12s linear infinite;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Dark Theme + Neon Particle Variants */
+  .particle:nth-child(1) {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 255, 255, 0.6); /* Cyan */
+    left: 5%;
+    animation-delay: 2s;
+  }
+  
+  .particle:nth-child(2) {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255, 20, 147, 0.5); /* Deep Pink */
+    left: 15%;
+    animation-delay: 3s;
+  }
+  
+  .particle:nth-child(3) {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 255, 0, 0.5); /* Neon Green */
+    left: 25%;
+    animation-delay: 1s;
+  }
+  
+  .particle:nth-child(4) {
+    width: 16px;
+    height: 16px;
+    background-color: rgba(75, 0, 130, 0.6); /* Indigo */
+    left: 35%;
+    animation-delay: 4s;
+  }
+  
+  .particle:nth-child(5) {
+    width: 9px;
+    height: 9px;
+    background-color: rgba(255, 140, 0, 0.5); /* Orange */
+    left: 45%;
+    animation-delay: 5s;
+  }
+  
+  .particle:nth-child(6) {
+    width: 11px;
+    height: 11px;
+    background-color: rgba(173, 216, 230, 0.6); /* Light Blue */
+    left: 55%;
+    animation-delay: 2s;
+  }
+  
+  .particle:nth-child(7) {
+    width: 13px;
+    height: 13px;
+    background-color: rgba(238, 130, 238, 0.6); /* Violet */
+    left: 65%;
+    animation-delay: 3s;
+  }
+  
+  .particle:nth-child(8) {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 0, 0, 0.5); /* Red */
+    left: 75%;
+    animation-delay: 4s;
+  }
+  
+  .particle:nth-child(9) {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 191, 255, 0.5); /* Deep Sky Blue */
+    left: 85%;
+    animation-delay: 2s;
+  }
+  
+  .particle:nth-child(10) {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.3); /* Soft White Glow */
+    left: 95%;
+    animation-delay: 1s;
+  }
+  

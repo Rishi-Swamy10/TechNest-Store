@@ -33,7 +33,9 @@ Coming soon...
    ```bash
    git clone https://github.com/yourusername/technest.git
    cd technest
- ```bash
+
+    ```bash
   npm install
- ```
+
+    ```
   npm run dev
